@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #202020;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.lampada {
+    font-size: 150px;
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+.apagada {
+    filter: grayscale(100%);
+    opacity: 0.4;
+}
+
+.acessa {
+    filter: none;
+    opacity: 1;
+
+    text-shadow:
+        0 0 20px yellow,
+        0 0 40px yellow,
+        0 0 80px orange;
+}
+
+#status {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.sensores {
+    display: grid;
+    gap: 12px;
+    margin-top: 20px;
+}
